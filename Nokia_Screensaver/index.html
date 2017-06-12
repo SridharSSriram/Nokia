@@ -7,39 +7,76 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
-
 	
-		<img class= "versatileRadio" src = "https://lh3.googleusercontent.com/gVmXCOhrJF2CUOoExq3Atb3AE1zKZgLj9ZW4jeiytj4cUOL_RyEBbPfzB8qBWQBkaSzKn0M1E2F81wA=w1920-h950">
-		<img class= "possibilities" src = "https://lh4.googleusercontent.com/etkL3DE-HQ-MAkdaZy-oXZX1TP2YTuz8lJhGU-yZDaWEF89llobQMV91LgiQYGhQGbKFMwg-B5Ru20U=w944-h923">
+	<body>
+		<div id = "pics">
+
+			<img class= "versatileRadio" src = "https://lh4.googleusercontent.com/_WE4SotilP6bpANH3eLqYpwLUbAoci6lKhHp-DvzsV-FLco8bLko7bfOrcPdBmlFn4qURvmZHuUBxuQ=w680-h648" height = "200" width = "200">
+			<img class= "possibilities" src = "https://lh4.googleusercontent.com/o3fKmNafUuMCwGdy7mp3587yMnAYmHncGsR526LlQ3J_cGUSsqj2befJQTgbfsYH-ZEGMVRhg1-eemI=w1362-h648" height = "200" width = "200">
+			<img class = "Systems" src = "https://lh3.googleusercontent.com/LfX_ceQeoo2Cglu6gpgZWPy5NYf90lK3DSw5dbiyybhsXpWmcXPfHeHUC5giLx_kYLKKU_HTFfQPkdY=w1362-h648" height = "200" width = "200">
+			<img class= "practicalities" src = "https://lh4.googleusercontent.com/PETcxw4jq2e8RKEZ6oSlSUkpK1fPHZIyITMpN01kU_UVBkiovkO09cbSHrws2DYTnxV715dtt_2NkmU=w1362-h648" height = "200" width = "200">
+			<img class= "potentials" src = "https://lh5.googleusercontent.com/tGM_b5jriI47mk0jC4RpSiQGmlyFrwRod7bo88B_B8vkkzCcQp4AiJp5WfkgmuGEWIFE1RNmVwUbq_s=w1362-h648" height = "200" width = "200">
+		</div>
 
 	</body>
 	
 	
 	<style>
-	
+	body{
+		background-color: #183693;
+	}
+		
+	#pics{
+		display: inline-block;
+	}
 	.possibilities{
-		animation: MoveUpDown 2.5s linear infinite;
+		animation: MoveUpDown 5s linear  infinite;
   		position: absolute;
-  		left: 500px;
+  		left: 0;
   		bottom: 0;
 	}
 	.versatileRadio {
- 		animation: MoveUpDown 2.5s linear infinite;
+		transition-delay: 1s;
+ 		animation: MoveUpDown 5s linear 0.1s infinite;
   		position: absolute;
-  		left: 0;
+  		left: 250px;
+  		bottom: 0;
+	}
+
+	.Systems{
+		animation: MoveUpDown 5s linear 0.2s infinite;
+  		position:absolute;
+  		left: 500px;
+  		bottom: 0;
+	}
+
+	.practicalities{
+		animation: MoveUpDown 5s linear 0.3s infinite;
+  		position:absolute;
+  		left: 750px;
+  		bottom: 0;
+	}
+
+	.potentials{
+		animation: MoveUpDown 5s linear 0.4s infinite;
+  		position:absolute;
+  		left: 1000px;
   		bottom: 0;
 	}
 
 	@keyframes MoveUpDown {
   		0% {
-    			bottom: 0;
+
+    		bottom: 100%;
   		}
   		50% {	
-			
-   			bottom: 100px;
+			/*top: 50%;*/
+
+   			bottom: 0;
   		}
  	 	100% {
-    			bottom: 0;
+			
+    		bottom: 100%;
   		}
 	}
 	</style>
